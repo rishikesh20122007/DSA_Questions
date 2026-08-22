@@ -4,7 +4,7 @@ class Solution {
         int digitproduct = 1;
         int original = n;     
 
-        while (n>0){    // don't use n > 1   it will provide you error in some test ccases 
+        while (n>=1){    // don't use n > 1   it will provide you error in some test ccases 
             int temp = n % 10;
             n = n / 10;
 
