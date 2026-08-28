@@ -34,7 +34,7 @@ class Solution {
 
         int minimum = n/3 + 1;
         if(count1 >= minimum) result.add(element1);
-        if(count2 >= minimum && element1 != element2) result.add(element2);
+        if(count2 >= minimum ) result.add(element2);
 
         return result;
 
