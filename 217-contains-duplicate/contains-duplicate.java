@@ -1,6 +1,5 @@
 class Solution {
     public boolean containsDuplicate(int[] nums) {
-        int n = nums.length;
         HashMap<Integer,Integer> freq = new HashMap<>();
         for(int num:nums){
             freq.put(num,freq.getOrDefault(num,0) +1);
