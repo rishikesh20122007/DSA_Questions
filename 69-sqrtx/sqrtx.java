@@ -3,7 +3,7 @@ class Solution {
         if(x < 2) return x;
 
         int start = 1;
-        int end = x;
+        int end = x/2;    // sqrt of a number is always less than half of that number 
         int ans = 1;
 
         while(start <= end){
