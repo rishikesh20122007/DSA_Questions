@@ -3,13 +3,13 @@ class Solution {
         if(x < 2) return x;
 
         int start = 1;
-        int end = x / 2;
+        int end = x;
         int ans = 1;
 
         while(start <= end){
             int mid = start + (end - start) / 2;
 
-            if(mid <= x / mid){
+            if(mid <= x / mid){     //mid * mid <= x
                 ans = mid;
                 start = mid + 1;
             }
