@@ -10,7 +10,7 @@ class Solution {
         }
 
         if(threshold >= sum) return 1;
-        if(threshold == nums.length) return high;
+        // if(threshold == nums.length) return high;
 
         while(low < high){
             int mid = low + (high - low) / 2;
