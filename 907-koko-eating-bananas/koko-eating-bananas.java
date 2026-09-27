@@ -11,7 +11,6 @@ class Solution {
         int n = piles.length;
         int low = 1;
         int high = 0;
-
         for(int pile: piles){
             high = Math.max(high,pile);
         }
