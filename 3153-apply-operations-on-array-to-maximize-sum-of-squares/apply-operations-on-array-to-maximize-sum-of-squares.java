@@ -1,10 +1,11 @@
 class Solution {
     public int maxSum(List<Integer> nums, int k) {
         final int modulo = 1000000007;
-        int count[] = new int[30];
+        int n =  30;
+        int count[] = new int[n];
 
         for(int num : nums){
-            for(int i = 0 ; i < 30; i++){
+            for(int i = 0 ; i < n; i++){
                 if((num & ( 1 << i)) != 0){
                     count[i]++;
                 }
@@ -21,6 +22,7 @@ class Solution {
             }
             answer = (answer + currentvalue * currentvalue) % modulo;
         }
-        return (int)answer;
+        return (int)
+        answer;
     }
 }
