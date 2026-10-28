@@ -28,9 +28,9 @@ class Solution {
 
 // 2nd approach without binary search;
 
-// but it will take time complexity on O(n + m)
+// but it will take time complexity of O(n + m)
 //which is probhited according to questions.
-
+// so we are using the above approach for the quesiton
 
 // class Solution {
 //     public boolean searchMatrix(int[][] matrix, int target) {
