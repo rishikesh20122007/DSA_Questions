@@ -36,7 +36,7 @@ class Solution {
 }
 
 
-
+// 2nd apprach -> using HashMap;
  
 // import java.util.HashMap;
 // import java.util.Map;
