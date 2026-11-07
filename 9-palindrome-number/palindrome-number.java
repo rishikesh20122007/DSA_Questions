@@ -10,7 +10,7 @@ class Solution {
         while(x > 0){
             int digits = x % 10;
             reverse = reverse *  10 + digits;
-            x = x / 10;
+            x /= 10;
         }
 
         return original == reverse;
