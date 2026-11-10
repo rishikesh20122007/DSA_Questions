@@ -1,11 +1,9 @@
 class Solution {
     public int climbStairs(int n, int[] costs) {
-            
-
         //initiate variable
-        int a = 0, 
-        b = 0,
-        c = 0;
+        int a = 0; 
+        int b = 0;
+        int c = 0;
 
         for(int i = 0 ; i < n ; i++){
             int next = Math.min(Math.min(a + 9 , b + 4) , c + 1) + costs[i];
