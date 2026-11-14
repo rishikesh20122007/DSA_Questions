@@ -15,25 +15,20 @@ class Solution {
         // return answer;
 
         //---> 2nd approach------
-        if( n <= 1 ) {
-            return n;
-        }
-
-        return fib(n - 2) + fib(n - 1);
-
-        //---> 3rd approach---------
-        //base case
-        // if(n == 0 & n == 1){
+        // if( n <= 1 ) {
         //     return n;
         // }
 
-        // //recursive relation
-        // int f1 = fib(n - 1);
-        // int f2 = fib(n - 2);
+        // return fib(n - 2) + fib(n - 1);
 
-        // int ans = f1 + f2;
-
-        // return ans;
+        //---> 3rd approach---------
+        //base case
+        if(n <= 1){
+            return n;
+        }
+        int f1 = fib(n-1);
+        int f2 = fib(n-2);
+        return f1+f2;
 
     }
 }
