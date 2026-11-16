@@ -13,12 +13,14 @@ class Solution {
                 for(int j = i ; j <  Math.min(i + k , n); ++j){
                     value += s.charAt(j) - '0';
                 }
+                //store the value into temp stringbuilder
                 temp.append(value);
             }
+            //now store result in string
             s = temp.toString();
         }
 
-        //rerurning output
+        //rerurning output and printing string
 
         return s;
     }
