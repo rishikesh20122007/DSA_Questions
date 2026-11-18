@@ -23,9 +23,9 @@ class Solution {
         int count = 0;
         int n = s.length();
         for(int i = 1; i < n; i+=2){
-            int pc = s.charAt(i - 1);
-            int c = s.charAt(i);
-            if(pc != c){
+            // int pc = s.charAt(i - 1);
+            // int c = s.charAt(i);
+            if(s.charAt(i - 1) !=s.charAt(i)){
                 count++;
             }
         }
