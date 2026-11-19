@@ -4,9 +4,10 @@ class Solution {
         //sort the arrays first
         Arrays.sort(nums);
         //now processing 
-        return Math.min(
-            Math.min(nums[num - 3] - nums[0] ,  nums[num - 2] - nums[1]) ,
-            nums[num - 1] - nums[2]
-        );
+        int a = nums[num - 3] - nums[0];
+        int b = nums[num - 2] - nums[1];
+        int c = nums[num - 1] - nums[2];
+
+        return Math.min(a ,Math.min( b , c ));
     }
 }
