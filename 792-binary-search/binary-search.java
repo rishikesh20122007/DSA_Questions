@@ -3,7 +3,8 @@ class Solution {
         int n = nums.length;
         int s = 0;
         int e = n - 1;
-
+        //solving using recursive function
+        
         int ans = solve(nums , s , e , target);
         return ans;
     }
