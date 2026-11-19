@@ -22,15 +22,39 @@ class Solution {
         }
 
         if(arr[mid] > target){
-            // e = mid - 1;
-            return solve(arr , s , mid - 1, target);
+            e = mid - 1;
+            // return solve(arr , s , mid - 1, target);
         }
         else{
-            // s = mid + 1;
-            return solve(arr , mid + 1 , e, target);
+            s = mid + 1;
+            // return solve(arr , mid + 1 , e, target);
         }
        
-    
+        return solve(arr , s , e , target);
+
+        //if  you are using recursive function , then comment out above return statement 
         
     }
+
+    // private int solve(int[] arr , int s , int e , int target){
+    //     //base case
+    //     if(s > e){
+    //         return -1;
+    //     }
+    //     //processing
+    //     int mid = s + ( e - s ) / 2;
+
+    //     if(arr[mid] == target){
+    //         return  mid; 
+    //     }
+
+    //     if(arr[mid] > target){
+    //         // e = mid - 1;
+    //         return solve(arr , s , mid - 1, target);
+    //     }
+    //     else{
+    //         // s = mid + 1;
+    //         return solve(arr , mid + 1 , e, target);
+    //     } 
+    // }
 }
