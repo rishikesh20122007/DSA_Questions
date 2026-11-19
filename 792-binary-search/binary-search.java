@@ -1,21 +1,33 @@
 class Solution {
     public int search(int[] nums, int target) {
         int n = nums.length;
+        int s = 0;
+        int e = n - 1;
 
-        int low = 0;
-        int high = n - 1;
-        while(low <= high){
-            int mid = low + (high - low) / 2;
-            if(nums[mid] == target){
-                 return mid;
-            }
-            else if(nums[mid] < target){
-                low = mid + 1;
-            }
-            else{ 
-                high = mid - 1;
-            }
+        int ans = solve(nums , s , e , target);
+        return ans;
+    }
+
+    private int solve(int[] arr , int s , int e , int target){
+        //base case
+        if(s > e){
+            return -1;
         }
-        return -1;
+        //processing
+        int mid = s + ( e - s ) / 2;
+
+        if(arr[mid] == target){
+            return  mid; 
+        }
+
+        if(arr[mid] > target){
+            e = mid - 1;
+        }
+        else{
+            s = mid + 1;
+        }
+
+        int ans = solve(arr , s , e, target);
+        return ans;
     }
 }
