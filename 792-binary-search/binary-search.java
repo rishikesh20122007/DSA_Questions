@@ -4,7 +4,7 @@ class Solution {
         int s = 0;
         int e = n - 1;
         //solving using recursive function
-        
+
         int ans = solve(nums , s , e , target);
         return ans;
     }
@@ -22,13 +22,15 @@ class Solution {
         }
 
         if(arr[mid] > target){
-            e = mid - 1;
+            // e = mid - 1;
+            return solve(arr , s , mid - 1, target);
         }
         else{
-            s = mid + 1;
+            // s = mid + 1;
+            return solve(arr , mid + 1 , e, target);
         }
-
-        int ans = solve(arr , s , e, target);
-        return ans;
+       
+    
+        
     }
 }
