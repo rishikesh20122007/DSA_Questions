@@ -1,15 +1,15 @@
 class Solution {
     public boolean canAliceWin(int n) {
        int stoneremove = 10;
-        int a = 0;
+        int count = 0;
 
         while(n >= stoneremove){
             n = n - stoneremove;
             stoneremove--;
-            a++;
+            count++;
         }
 
-        return a % 2 == 1;
+        return count % 2 == 1;
 
     }
 }
